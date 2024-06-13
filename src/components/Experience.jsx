@@ -77,7 +77,7 @@ export const Experience = () => {
           >
             Experience
           </p>
-          <p className="py-6">i work</p>
+          <p className="py-6 font">i work with these Technologies</p>
         </div>
 
         <div
