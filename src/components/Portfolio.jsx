@@ -5,13 +5,15 @@ import installNode from "../assets/portfolio/installNode.jpg";
 import reactParallax from "../assets/portfolio/reactParallax.jpg";
 import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
 import reactWeather from "../assets/portfolio/reactWeather.jpg";
-import usestate from "../assets/portfolio/usestate.jpg";
+import nike_shoe from "../assets/portfolio/nike_shoe.png";
 
 export const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
-      src: arrayDestruct,
+      src: nike_shoe,
+      demoLink: "https://nike-shoe-project2.netlify.app/",
+      codeLink: "https://github.com/Siraddeen/nike_project",
     },
     {
       id: 2,
@@ -34,6 +36,14 @@ export const Portfolio = () => {
       src: reactWeather,
     },
   ];
+
+  const handleButtonClick = (url) => {
+    if (typeof window !== "undefined") {
+      const newWindow = window.open(url, "_blank", "noopener,noreferrer");
+      if (newWindow) newWindow.opener = null;
+    }
+  };
+
   return (
     <div
       name="portfolio"
@@ -56,7 +66,7 @@ export const Portfolio = () => {
             className="g grid sm:grid-cols-2 md:grid-cols-3 gap-8 
           px-12 sm:px-0"
           >
-            {portfolios.map(({ id, src }) => (
+            {portfolios.map(({ id, src, codeLink, demoLink }) => (
               <div key={id} className="a shadow-md shadow-gray-600 rounded-lg">
                 <img
                   src={src}
@@ -66,10 +76,16 @@ export const Portfolio = () => {
                 />
 
                 <div className="flex items-center justify-center ">
-                  <button className="s w-1/2 px-6 py-3 m-4 duration-200">
+                  <button
+                    onClick={() => handleButtonClick(demoLink)}
+                    className="s w-1/2 px-6 py-3 m-4 duration-200 hover:scale-110 duration-200 bg-cyan-600 rounded-lg text-orange-300"
+                  >
                     Demo
                   </button>
-                  <button className="s w-1/2 px-6 py-3 m-4 duration-200">
+                  <button
+                    onClick={() => handleButtonClick(codeLink)}
+                    className="s w-1/2 px-6 py-3 m-4 duration-200 hover:scale-110 duration-200 bg-gray-600 rounded-lg text-orange-300"
+                  >
                     Code
                   </button>
                 </div>
