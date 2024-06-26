@@ -1,40 +1,42 @@
 import React from "react";
 import navbar from "../assets/portfolio/navbar.jpg";
-import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
-import installNode from "../assets/portfolio/installNode.jpg";
-import reactParallax from "../assets/portfolio/reactParallax.jpg";
-import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
-import reactWeather from "../assets/portfolio/reactWeather.jpg";
+import stopwatch from "../assets/portfolio/stopwatch.png";
+import blog_app from "../assets/portfolio/blog_app.png";
+
 import nike_shoe from "../assets/portfolio/nike_shoe.png";
 
 export const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
+      src: blog_app,
+      demoLink: "https://blog-project-ten-hazel.vercel.app/signup",
+      codeLink: "https://github.com/Siraddeen/Blog-Project",
+    },
+    {
+      id: 2,
       src: nike_shoe,
       demoLink: "https://nike-shoe-project2.netlify.app/",
       codeLink: "https://github.com/Siraddeen/nike_project",
     },
     {
-      id: 2,
-      src: navbar,
-    },
-    {
       id: 3,
-      src: installNode,
+      src: stopwatch,
+      demoLink: "https://stop-watch-project1.netlify.app/",
+      codeLink: "https://github.com/Siraddeen/my-Project/tree/main/StopWatch",
     },
-    {
-      id: 4,
-      src: reactParallax,
-    },
-    {
-      id: 5,
-      src: reactSmooth,
-    },
-    {
-      id: 6,
-      src: reactWeather,
-    },
+    // {
+    //   id: 4,
+    //   src: reactParallax,
+    // },
+    // {
+    //   id: 5,
+    //   src: reactSmooth,
+    // },
+    // {
+    //   id: 6,
+    //   src: reactWeather,
+    // },
   ];
 
   const handleButtonClick = (url) => {

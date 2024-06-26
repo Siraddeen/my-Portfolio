@@ -1,5 +1,5 @@
 import React from "react";
-
+const hello = "okada";
 export const About = () => {
   return (
     <div
@@ -18,19 +18,25 @@ export const About = () => {
           </p>
         </div>
         <p className="text-xl mt-20">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi
-          tenetur consequatur recusandae cupiditate dolorum inventore voluptates
-          nam sunt ullam et debitis, quo temporibus quisquam facere odit
-          deleniti ipsa tempore quam.
+          Hello everyone, I am a self-taught learner with a background in the
+          mechanical department. I decided to switch my career from a non-IT
+          sector to the IT sector to fulfill my dreams.
         </p>
         <br />
         <p className="text-xl ">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque culpa
-          ab quo exercitationem at voluptas nulla nihil doloremque. Eveniet
-          possimus temporibus earum quo doloremque tempore a repellendus
-          reiciendis illum quam!
+          {`I have hands-on experience with real-time projects, which include `}
+          <span className=" text-red-300 font-bold">{`CI/CD (Continuous Integration and Continuous Delivery), Dockerizing
+          projects, using Prisma ORMs , using React with TypeScript along with
+          Tailwind, and learning new technologies like Next.js and Kubernetes & also learning serverless deployment
+          via using Hono with CloudFlare workers `}</span>
+          {`and other technologies.`}
+        </p>
+        <p className="text-xl mt-10">
+          I am working on these projects in my spare time and look forward to
+          connecting with you all.{" "}
         </p>
       </div>
     </div>
   );
 };
+<span style={{ color: "red", fontWeight: "bold" }}>{hello}</span>;

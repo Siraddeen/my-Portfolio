@@ -6,6 +6,9 @@ import javascript from "../assets/javascript.png";
 import react from "../assets/react.png";
 import nextjs from "../assets/nextjs.png";
 import graphql from "../assets/graphql.png";
+import hono from "../assets/hono.png";
+import prisma from "../assets/prisma.png";
+import express from "../assets/express.png";
 import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
 
@@ -49,8 +52,8 @@ export const Experience = () => {
     },
     {
       id: 7,
-      src: graphql,
-      title: "Graphql",
+      src: express,
+      title: "ExpressJs",
       style: " shadow-pink-400",
     },
     {
@@ -58,6 +61,18 @@ export const Experience = () => {
       src: github,
       title: "Github",
       style: " shadow-gray-400",
+    },
+    {
+      id: 9,
+      src: prisma,
+      title: "Prisma",
+      style: " shadow-blue-400",
+    },
+    {
+      id: 10,
+      src: hono,
+      title: "Hono",
+      style: " shadow-orange-400",
     },
   ];
   return (

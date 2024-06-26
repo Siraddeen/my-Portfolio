@@ -18,11 +18,9 @@ export const Home = () => {
           <h2 className="text-4xl sm:text-7xl font-bold text-white">
             I'm a Full Stack Developer
           </h2>
-          <p className="text-gray-500 py-4 max-w-md">
+          <p className="text-gray-500 py-4 max-w-md font-bold">
             {" "}
-            do more communication than you do b never distract from your
-            acheivable goal, that easily c always avoid toxic people d try to
-            reprogramm your ideology of your thought process regularly
+            Kindly Go through till end in this webpage to know about me{" "}
           </p>
           <div>
             <Link
