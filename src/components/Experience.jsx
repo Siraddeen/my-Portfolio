@@ -34,9 +34,9 @@ export const Experience = () => {
     },
     {
       id: 4,
-      src: react,
-      title: "React",
-      style: " shadow-blue-600",
+      src: express,
+      title: "ExpressJs",
+      style: " shadow-pink-400",
     },
     {
       id: 5,
@@ -45,16 +45,16 @@ export const Experience = () => {
       style: " shadow-sky-400",
     },
     {
+      id: 7,
+      src: react,
+      title: "React",
+      style: " shadow-blue-600",
+    },
+    {
       id: 6,
       src: nextjs,
       title: "Next Js",
       style: " shadow-white",
-    },
-    {
-      id: 7,
-      src: express,
-      title: "ExpressJs",
-      style: " shadow-pink-400",
     },
     {
       id: 8,
@@ -96,7 +96,7 @@ export const Experience = () => {
         </div>
 
         <div
-          className=" w-full grid  grid-cols-2 sm:grid-cols-3 gap-8
+          className=" w-full grid  grid-cols-2 sm:grid-cols-3 md:grid-cols-4  gap-8
          text-center py-8 px-12 sm:px-0"
         >
           {techs.map(({ id, src, title, style }) => (

@@ -20,7 +20,7 @@ export const Home = () => {
           </h2>
           <p className="text-gray-500 py-4 max-w-md font-bold">
             {" "}
-            Kindly Go through till end in this webpage to know about me{" "}
+            Kindly read through the entire webpage to learn more about me{" "}
           </p>
           <div>
             <Link
