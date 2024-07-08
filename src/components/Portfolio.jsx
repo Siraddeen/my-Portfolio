@@ -1,5 +1,6 @@
 import React from "react";
 import navbar from "../assets/portfolio/navbar.jpg";
+import drag_KanbanBoard from "../assets/portfolio/drag_KanbanBoard.png";
 import stopwatch from "../assets/portfolio/stopwatch.png";
 import blog_app from "../assets/portfolio/blog_app.png";
 import nike_shoe from "../assets/portfolio/nike_shoe.png";
@@ -31,6 +32,14 @@ export const Portfolio = () => {
       codeLink: "https://github.com/Siraddeen/my-Project/tree/main/StopWatch",
       details: `A simple stop-watch app, created as side project.`,
       detailColor: "text-yellow-100",
+    },
+    {
+      id: 4,
+      src: drag_KanbanBoard,
+      demoLink: "https://kanbanboard-drag.netlify.app/",
+      codeLink: "https://github.com/Siraddeen/my-Project/tree/main/drag_drop_k",
+      details: `A simple drag & drop box created via react+typescript+tailwind.`,
+      detailColor: "text-rose-100",
     },
   ];
 
