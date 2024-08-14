@@ -4,11 +4,21 @@ import drag_KanbanBoard from "../assets/portfolio/drag_KanbanBoard.png";
 import stopwatch from "../assets/portfolio/stopwatch.png";
 import blog_app from "../assets/portfolio/blog_app.png";
 import nike_shoe from "../assets/portfolio/nike_shoe.png";
+import social_media from "../assets/portfolio/social-media.png";
 
 export const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
+      src: social_media,
+      demoLink: "https://siraddeen-mini-media.onrender.com/",
+      codeLink: "https://github.com/Siraddeen/Siraddeen-mini-Media",
+      details:
+        "This mini-social media app let you chat in private  & post your images which can be liked & commented by your friends. UI of this applications is inspired from instagram  ",
+      detailColor: "text-red-100",
+    },
+    {
+      id: 2,
       src: blog_app,
       demoLink: "https://blog-project-ten-hazel.vercel.app/signup",
       codeLink: "https://github.com/Siraddeen/Blog-Project",
@@ -17,7 +27,7 @@ export const Portfolio = () => {
       detailColor: "text-green-100",
     },
     {
-      id: 2,
+      id: 3,
       src: nike_shoe,
       demoLink: "https://nike-shoe-project2.netlify.app/",
       codeLink: "https://github.com/Siraddeen/nike_project",
@@ -26,7 +36,7 @@ export const Portfolio = () => {
       detailColor: "text-blue-200",
     },
     {
-      id: 3,
+      id: 4,
       src: stopwatch,
       demoLink: "https://stop-watch-project1.netlify.app/",
       codeLink: "https://github.com/Siraddeen/my-Project/tree/main/StopWatch",
@@ -34,7 +44,7 @@ export const Portfolio = () => {
       detailColor: "text-yellow-100",
     },
     {
-      id: 4,
+      id: 5,
       src: drag_KanbanBoard,
       demoLink: "https://kanbanboard-drag.netlify.app/",
       codeLink: "https://github.com/Siraddeen/my-Project/tree/main/drag_drop_k",
