@@ -5,11 +5,13 @@ import stopwatch from "../assets/portfolio/stopwatch.png";
 import blog_app from "../assets/portfolio/blog_app.png";
 import nike_shoe from "../assets/portfolio/nike_shoe.png";
 import social_media from "../assets/portfolio/social-media.png";
+import chat_app from "../assets/portfolio/chat_application.png";
 
 export const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
+      name: "mini-social_media",
       src: social_media,
       demoLink: "https://siraddeen-mini-media.onrender.com/",
       codeLink: "https://github.com/Siraddeen/Siraddeen-mini-Media",
@@ -19,6 +21,7 @@ export const Portfolio = () => {
     },
     {
       id: 2,
+      name: "mini Medium, blog website",
       src: blog_app,
       demoLink: "https://blog-project-ten-hazel.vercel.app/signup",
       codeLink: "https://github.com/Siraddeen/Blog-Project",
@@ -28,6 +31,17 @@ export const Portfolio = () => {
     },
     {
       id: 3,
+      name: "real time chat application",
+      src: chat_app,
+      demoLink: "https://sir-chatx.onrender.com/",
+      codeLink: "https://github.com/Siraddeen/Sir_ChatX",
+      details:
+        "From this project, learnt how to use the socket.io for the real time communications accros the different plateforms.",
+      detailColor: "text-orange-200",
+    },
+    {
+      id: 4,
+      name: "Nike shoe show case page",
       src: nike_shoe,
       demoLink: "https://nike-shoe-project2.netlify.app/",
       codeLink: "https://github.com/Siraddeen/nike_project",
@@ -36,7 +50,8 @@ export const Portfolio = () => {
       detailColor: "text-blue-200",
     },
     {
-      id: 4,
+      id: 5,
+      name: "A stopWatch",
       src: stopwatch,
       demoLink: "https://stop-watch-project1.netlify.app/",
       codeLink: "https://github.com/Siraddeen/my-Project/tree/main/StopWatch",
@@ -44,7 +59,8 @@ export const Portfolio = () => {
       detailColor: "text-yellow-100",
     },
     {
-      id: 5,
+      id: 6,
+      name: " A KanbanBoard to drag & drop",
       src: drag_KanbanBoard,
       demoLink: "https://kanbanboard-drag.netlify.app/",
       codeLink: "https://github.com/Siraddeen/my-Project/tree/main/drag_drop_k",
@@ -71,13 +87,19 @@ export const Portfolio = () => {
             Portfolio
           </p>
           <p className="py-6">Check my work here </p>
-          <div className="g grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
+          <div className="g grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0 py-2">
             {portfolios.map(
-              ({ id, src, codeLink, demoLink, details, detailColor }) => (
+              ({ id, name, src, codeLink, demoLink, details, detailColor }) => (
                 <div
                   key={id}
                   className="a shadow-md shadow-gray-600 rounded-lg"
                 >
+                  <p
+                    className="italic font-semibold text-fuchsia-400"
+                    src={name}
+                  >
+                    {name}
+                  </p>
                   <img
                     src={src}
                     alt="portfolio-item"
