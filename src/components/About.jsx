@@ -25,7 +25,7 @@ export const About = () => {
         <br />
         <p className="text-xl ">
           {`I have hands-on experience with real-time projects, which include `}
-          <span className=" text-red-300 font-bold">{`CI/CD (Continuous Integration and Continuous Delivery), Dockerizing
+          <span className=" text-red-300 font-bold">{`CI/CD (Continuous Integration and Continuous Delivery or Deployment), Dockerizing
           projects, using Prisma ORMs , using React with TypeScript along with
           Tailwind, and learning new technologies like Next.js and Kubernetes & also learning serverless deployment
           via using Hono with CloudFlare workers `}</span>
