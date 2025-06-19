@@ -7,21 +7,32 @@ import nike_shoe from "../assets/portfolio/nike_shoe.png";
 import social_media from "../assets/portfolio/social-media.png";
 import chat_app from "../assets/portfolio/chat_application.png";
 import ai_bot from "../assets/portfolio/AI-chatbot.png";
+import resume_analyser from "../assets/portfolio/Resume-Analyzer.png";
 
 export const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
+      name: "Resume Analyzer",
+      src: resume_analyser,
+      demoLink: "https://siraddeen-resume-analyzer.netlify.app/",
+      codeLink: "https://github.com/Siraddeen/Resume-Analyzer",
+      details:
+        "This is AI Resume Analyzer which is built using React, tailwind.css & Gemini gen AI. It allows users to upload their resume & can get live result from AI to how to improve their resume.",
+      detailColor: "text-orange-300",
+    },
+    {
+      id: 2,
       name: "AI chatbot",
       src: ai_bot,
       demoLink: "https://siraj-chat-bot.netlify.app/",
       codeLink: "https://github.com/Siraddeen/AI-chatBot",
       details:
-        "This AI chatbot is built using React, tailwind.css and OpenAI's GPT-3.5 Turbo model & gemini. It allows users to interact with the AI in a chat-like interface, providing responses based on user input.",
+        "This AI chatbot is built using React, tailwind.css and OpenAI's GPT-4.o mini model & gemini. It allows users to interact with the AI in a chat-like interface, providing responses based on user input.",
       detailColor: "text-rose-300",
     },
     {
-      id: 2,
+      id: 3,
       name: "mini-social_media",
       src: social_media,
       demoLink: "https://siraddeen-mini-media.onrender.com/",
@@ -31,7 +42,7 @@ export const Portfolio = () => {
       detailColor: "text-red-100",
     },
     {
-      id: 3,
+      id: 4,
       name: "mini Medium, blog website",
       src: blog_app,
       demoLink: "https://blog-project-ten-hazel.vercel.app/signup",
@@ -41,7 +52,7 @@ export const Portfolio = () => {
       detailColor: "text-green-100",
     },
     {
-      id: 4,
+      id: 5,
       name: "real time chat application",
       src: chat_app,
       demoLink: "https://sir-chatx.onrender.com/",
@@ -51,7 +62,7 @@ export const Portfolio = () => {
       detailColor: "text-orange-200",
     },
     {
-      id: 5,
+      id: 6,
       name: "Nike shoe show case page",
       src: nike_shoe,
       demoLink: "https://nike-shoe-project2.netlify.app/",
@@ -61,7 +72,7 @@ export const Portfolio = () => {
       detailColor: "text-blue-200",
     },
     {
-      id: 6,
+      id: 7,
       name: "A stopWatch",
       src: stopwatch,
       demoLink: "https://stop-watch-project1.netlify.app/",
@@ -70,7 +81,7 @@ export const Portfolio = () => {
       detailColor: "text-yellow-100",
     },
     {
-      id: 7,
+      id: 8,
       name: " A KanbanBoard to drag & drop",
       src: drag_KanbanBoard,
       demoLink: "https://kanbanboard-drag.netlify.app/",
