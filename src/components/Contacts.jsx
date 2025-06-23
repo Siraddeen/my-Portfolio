@@ -13,7 +13,25 @@ export const Contacts = () => {
       >
         <div className="pb-8">
           <p className=" text-4xl font-bold inline border-b-4 border-gray-500">
-            Contact
+            Contact Me
+          </p>
+          <p className="mt-8">
+            Linkedin :{" "}
+            <a
+              href="https://www.linkedin.com/in/siraddeen/"
+              className="text-blue-400  font-semibold"
+            >
+              Siraddeen linkedin
+            </a>
+          </p>
+          <p>
+            Github :{" "}
+            <a
+              href="https://github.com/Siraddeen"
+              className="text-blue-400 font-semibold"
+            >
+              Siraddeen github
+            </a>
           </p>
           <p className="py-6">Submit the form, to get in touch with me</p>
         </div>

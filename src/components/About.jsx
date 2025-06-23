@@ -5,7 +5,7 @@ export const About = () => {
     <div
       name="about"
       className="w-full h-screen bg-gradient-to-b
-       from-gray-800 to-black text-white"
+       from-gray-800 to-black text-white "
     >
       <div
         className="max-w-screen-lg p-4 mx-auto flex flex-col
@@ -14,13 +14,14 @@ export const About = () => {
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             {" "}
-            About
+            About Me
           </p>
         </div>
-        <p className="text-xl mt-20">
-          Hello everyone, I am a self-taught learner with a background in the
-          mechanical department. I decided to switch my career from a non-IT
-          sector to the IT sector to fulfill my dreams.
+        <p className="text-xl mt-10 italic">
+          I started coding after building a tool to help a friend manage notes.
+          That grew into a passion for full-stack development. I love building
+          clean, efficient apps and I'm currently looking for remote
+          opportunities where I can contribute to real-world product teams.
         </p>
         <br />
         <p className="text-xl ">
@@ -40,3 +41,7 @@ export const About = () => {
   );
 };
 <span style={{ color: "red", fontWeight: "bold" }}>{hello}</span>;
+
+` Hello everyone, I am a self-taught learner with a background in the
+          mechanical department. I decided to switch my career from a non-IT
+          sector to the IT sector to fulfill my dreams.`;

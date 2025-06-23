@@ -18,10 +18,13 @@ export const Home = () => {
           <h2 className="text-4xl sm:text-7xl font-bold text-white">
             I'm a Full Stack Developer
           </h2>
-          <p className="text-gray-500 py-4 max-w-md font-bold">
+          <p className="text-orange-500 py-4 max-w-md font-bold italic ">
             {" "}
-            Kindly read through the entire webpage to learn more about me{" "}
+            Full-Stack Developer who turns product ideas into functional MVP's{" "}
           </p>
+          <h3 className="  text-2xl sm:text-4xl font-bold text-red-300 italic">
+            Hire Me
+          </h3>
           <div>
             <Link
               to="portfolio"
