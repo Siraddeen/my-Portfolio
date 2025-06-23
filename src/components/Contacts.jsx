@@ -19,7 +19,9 @@ export const Contacts = () => {
             Linkedin :{" "}
             <a
               href="https://www.linkedin.com/in/siraddeen/"
-              className="text-blue-400  font-semibold"
+              className="text-blue-400  font-semibold hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Siraddeen linkedin
             </a>
@@ -28,7 +30,9 @@ export const Contacts = () => {
             Github :{" "}
             <a
               href="https://github.com/Siraddeen"
-              className="text-blue-400 font-semibold"
+              className="text-blue-400 font-semibold hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Siraddeen github
             </a>
